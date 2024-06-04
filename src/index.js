@@ -1,15 +1,16 @@
 import { RouterMap, setAllNavigationLinks } from "./easy-page"
 import "./index.css"
 //set the config
-const urlProperty = "pathname"
+const urlProperty = "search"
 const caching = false
 const mainNode = document.querySelector("main")
 
 //set the routes map
 const routes = {
-    "/": "/template/main.html",
-    "/about": "/template/about.html",
-    "*": "/template/404.html",
+    "": "/test-website-easy-page.js/template/main.html",
+    "?": "/test-website-easy-page.js/template/main.html",
+    "?about": "/test-website-easy-page.js/template/about.html",
+    "*": "/test-website-easy-page.js/template/404.html",
 }
 
 //call the routermap

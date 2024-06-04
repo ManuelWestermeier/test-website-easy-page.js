@@ -4,7 +4,7 @@ const config = defineConfig({
     build: {
         outDir: "docs"
     },
-    base: "/" // Ensure the base is correct for your project
+    base: /test-website-easy-page.js/
 });
 
 export default config;
