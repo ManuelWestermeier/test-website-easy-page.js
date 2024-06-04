@@ -11,6 +11,10 @@
     color: red;
 }
 
+::selection {
+    background-color: yellow;
+}
+
 @keyframes pageTransition {
     0% {
         opacity: 1;
