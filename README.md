@@ -1,6 +1,6 @@
 # easy-page.js
 
-![](https://github.com/ManuelWestermeier/manuelwestermeier.github.io/raw/main/test.mp4)
+<video controls src="https://github.com/ManuelWestermeier/manuelwestermeier.github.io/raw/main/test.mp4" title="Title"></video>
 
 ## basic setup
 
