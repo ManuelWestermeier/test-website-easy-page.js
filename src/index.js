@@ -7,9 +7,8 @@ const mainNode = document.querySelector("main")
 
 //set the routes map
 const routes = {
-    "": "/test-website-easy-page.js/template/main.html",
-    "?": "/test-website-easy-page.js/template/main.html",
-    "?about": "/test-website-easy-page.js/template/about.html",
+    "?/": "/test-website-easy-page.js/template/main.html",
+    "?/about": "/test-website-easy-page.js/template/about.html",
     "*": "/test-website-easy-page.js/template/404.html",
 }
 
@@ -19,12 +18,10 @@ const [setRouteHandeler, setLoadingHandeler] = RouterMap(urlProperty, caching, r
 //on url change
 setRouteHandeler((url, navigate) => {
 
-    if (!url)
-        navigate("?")
-
-    console.log("new url", url[urlProperty])
+    if (url[urlProperty] == "")
+        navigate("?/")
     //all links, the highlight url (add active class)
-    setAllNavigationLinks(document.querySelectorAll("a"), url || "?")
+    setAllNavigationLinks(document.querySelectorAll("a"), document.location)
 
 })
 
