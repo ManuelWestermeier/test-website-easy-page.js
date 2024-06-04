@@ -19,9 +19,12 @@ const [setRouteHandeler, setLoadingHandeler] = RouterMap(urlProperty, caching, r
 //on url change
 setRouteHandeler((url, navigate) => {
 
+    if (!url)
+        navigate("?")
+
     console.log("new url", url[urlProperty])
     //all links, the highlight url (add active class)
-    setAllNavigationLinks(document.querySelectorAll("a"), url)
+    setAllNavigationLinks(document.querySelectorAll("a"), url || "?")
 
 })
 
