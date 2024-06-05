@@ -2,7 +2,7 @@ import { RouterMap, setAllNavigationLinks } from "./easy-page"
 import "./index.css"
 //set the config
 const urlProperty = "search"
-const caching = false
+const caching = true
 const mainNode = document.querySelector("main")
 
 //set the routes map
